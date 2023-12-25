@@ -1,0 +1,33 @@
+.home {
+    width: 100%;
+
+    &-cover {
+        position: relative;
+        width: 100%;
+        background-size: cover;
+        /* Cover the entire container while maintaining aspect ratio */
+        background-position: center;
+        /* Center the background image */
+        background-repeat: no-repeat;
+        background-image: url('./berlin3.jpg');
+        height: 800px;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.45);
+            /* Adjust the last value (0.5) for the level of transparency */
+        }
+    }
+
+
+
+
+}
